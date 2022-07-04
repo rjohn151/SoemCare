@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Merriweather', serif;
+  font-size: 15px;
+  line-height: normal;
+  background: #E9E0DF;
+  color: black;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+#container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Navigation */
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 30px 0;
+  background: seashell;
+  border-radius: 5px;
+}
+
+.navbar ul{
+  display: flex;
+  list-style: none;
+  
+}
+
+.navbar ul li {
+padding: 0px 10px;
+
+}
+
+.navbar .logo{
+  height: 50px;
+  font-weight:bolder;
+ 
+}
+
+.navbar ul li a {
+padding: 0px 10px;
+
+}
+
+.navbar ul li a:hover {
+color: #E9E0DF;
+font-size: 20px;
+border-bottom: 2px solid black ;
+}
+
+/* Home */
+
+#home h1 span{
+  color: #fff;
+}
+
+#home h1, h2 {
+  font-weight: bolder;
+}
+
+#home h2{
+  font-size: 35px;
+  border-bottom: 2px solid black;
+}
+
+#home h2, h3{
+  padding-top: 30px;
+}
+
+#home h3{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+#home .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#home .container img{
+  border: 1px #E9E0DF transparent;
+  margin-top: 20px;
+  border-radius: 50%; 
+}
+
+#home .container img:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Gallery */
+
+.gallery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+.gallery img{
+  height: 265px;
+  width: 265px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.gallery img:hover{
+  /* opacity: 0.7; */
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+#gallery p {
+padding-bottom: 10px;
+}
+
+/* Reviews */
+
+#testimonials .container{
+  background-image: url(/img/IMG_7034-removebg-preview.png);
+}
+
+#testimonials .container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+#testimonials h1{
+  margin-top: 15px;
+}
+
+#testimonials i:hover{
+color: gold;
+cursor: pointer;
+
+}
+
+/* Contact */
+
+#contact .container h1, .get-info {
+  text-align: center;
+}
+
+#contact input, 
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px #E9E0DF transparent;
+  border-radius: 5px;
+}
+
+#contact-form textarea {
+  height: 200px;
+}
+
+.get-info{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#contact h1 {
+  padding-top: 10px ;
+}
+
+#contact .circle-1 i {
+  color: #1D9BF0;
+}
+
+#contact .circle-2 i {
+  color: #00BD70;
+}
+
+#contact button {
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  background: seashell;
+  /* color: green; */
+}
+
+#contact button:focus {
+  background: green;
+}
+
+
+
+/* Footer */
+#footer-home{
+  text-align: center;
+  padding-top: 30px;
+  
+}
+
+#footer-home p{
+  background: #fff5ee;
+  border-radius: 5px;
+}
+
+#footer-home .social-icons-1{
+  /* display: none; */
+  visibility: hidden;
+}
+
+/* Utilities */
+
+.social-icons{
+  position: fixed;
+  left: 9%;
+  top: 40%;
+  display:flex;
+  flex-direction: column;
+}
+
+.social-icons a{
+ padding-top: 20px;
+}
+
+.social-icons a:first-child:hover{
+  color: #E1306C;
+  font-size: 25px;
+}
+.social-icons a:nth-child(2):hover{
+  color: #1D9BF0 ;
+  font-size: 25px;
+}
+.social-icons a:last-child:hover{
+  color: #00BD70;
+  font-size: 25px;
+}
+
+#testimonials .padding .bottom-line {
+  padding-bottom: 5px;
+  display: none;
+  
+}
+
+.bottom-line {
+  height: 2px;
+  width: 20rem;
+  background-color: black;
+  display: none;
+  margin: 0 auto 1rem auto; 
+}
+
+/* Media Query for reponsiveness */
+
+@media (max-width: 700px) {
+  .navbar ul li a {
+    font-size: 9px;
+    }
+}
+
+@media (max-width: 700px) {
+  .navbar ul li a:hover {
+    color: #E9E0DF;
+    font-size: 9.5px;
+    border-bottom: 2px solid black ;
+    }
+}
+
+/* Puts E+S below the intro at 1051 */
+@media (max-width: 1050px) {
+  #home .container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    
+  }
+}
+/* Removes social icons on the left */
+@media (max-width: 1420px) {
+  .social-icons{
+   display: none;
+ }
+
+}
+
+@media (max-width: 1420px) {
+  #footer-home .social-icons-1{
+    visibility: visible;
+    padding-bottom: 20px ;
+
+ }
+
+}
+
+@media (max-width: 1420px) {
+  #footer-home .social-icons-1 a:first-child,
+  #footer-home .social-icons-1 a:nth-child(2),
+  #footer-home .social-icons-1 a:last-child{
+    padding-left: 10px;
+  }
+ }
+
+@media (max-width: 1420px) {
+  #footer-home .social-icons-1 a:first-child:hover{
+    color: #E1306C;
+    font-size: 20px;
+    padding-right: 20px;
+ }
+
+}
+@media (max-width: 1420px) {
+  #footer-home .social-icons-1 a:nth-child(2):hover{
+    color: #1D9BF0 ;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+ }
+
+}
+@media (max-width: 1420px) {
+  #footer-home .social-icons-1 a:last-child:hover{
+    color: #00BD70;
+    font-size: 20px;
+    padding-left: 20px;
+ }
+
+}
+
+
+
+
+
+@media (max-width: 1420px) {
+  #gallery h1, #gallery p, #testimonials h1{
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 1050px) {
+  #testimonials .container{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+}
+
+@media (max-width: 1050px) {
+  #testimonials .padding {
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
+}
+
+
+/* Very important for responsiveness */
+ /* @media (max-width: 370px) {
+  #container{  
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+ 
