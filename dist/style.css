@@ -156,7 +156,7 @@ cursor: pointer;
 
 /* Contact */
 
-#contact .container h1, .get-info {
+#contact .container h1, .get-info, .recaptcha  {
   text-align: center;
 }
 
@@ -195,20 +195,17 @@ cursor: pointer;
   border-radius: 10px;
   text-transform: uppercase;
   background: seashell;
-  /* color: green; */
+  cursor: pointer;
 }
 
 #contact button:focus {
   background: green;
 }
 
-
-
 /* Footer */
 #footer-home{
   text-align: center;
   padding-top: 30px;
-  
 }
 
 #footer-home p{
@@ -217,7 +214,6 @@ cursor: pointer;
 }
 
 #footer-home .social-icons-1{
-  /* display: none; */
   visibility: hidden;
 }
 
@@ -288,6 +284,7 @@ cursor: pointer;
     
   }
 }
+
 /* Removes social icons on the left */
 @media (max-width: 1420px) {
   .social-icons{
@@ -339,16 +336,11 @@ cursor: pointer;
 
 }
 
-
-
-
-
 @media (max-width: 1420px) {
   #gallery h1, #gallery p, #testimonials h1{
     text-align: center;
   }
 }
-
 
 @media (max-width: 1050px) {
   #testimonials .container{
@@ -364,7 +356,6 @@ cursor: pointer;
     border-bottom: 1px solid black;
   }
 }
-
 
 /* Very important for responsiveness */
  /* @media (max-width: 370px) {
